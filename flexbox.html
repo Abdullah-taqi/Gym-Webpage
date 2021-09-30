@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      height: 344px;
+      width: 100%;
+      border: 2px solid black;
+      display: flex;
+      flex-direction: row;
+
+      /* flex-direction: row; */
+      /* flex-direction: column-reverse; */
+      /* flex-wrap: wrap; */
+      /* responsive design^^^ */
+      /* flex-flow: row wrap; */
+      /* short hand^ */
+      /* justify-content: center; */
+      /* justify-content: space-between; */
+      /* justify-content: space-evenly; */
+      /* justify-content: space-around; */
+
+      /* align-items: center;
+      align-items: flex-end; */
+      align-items: stretch;
+    }
+    .item {
+      background-color: tomato;
+      border: 2px solid black;
+      margin: 10px;
+      padding: 3px;
+      width: 200px;
+      height: 200px;
+    }
+    #item-1 {
+      /* flex-shrink: 14; */
+      flex-basis: 120px;
+    }
+    #item-3 {
+      /* flex-grow: 3; */
+      /* order: 3; */
+      /* flex: flex-grow, flex shrink, flex-basis  short hand */
+      /* flex: 2 2 230px; */
+      /* align-self: center; */
+      /*  align-self: end; */
+    }
+  </style>
+  <body>
+    <h2>Flex box</h2>
+
+    <div class="container">
+      <div class="item" id="item-1">First</div>
+      <div class="item" id="item-2">Second</div>
+      <div class="item" id="item-3">Third</div>
+      <div class="item" id="item-4">Fourth</div>
+    </div>
+  </body>
+</html>
